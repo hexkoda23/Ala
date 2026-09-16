@@ -5,5 +5,9 @@
   "scripts": {
     "start": "node server.js",
     "build": "echo build complete"
+  },
+  "dependencies": {
+    "cloudinary": "^2.11.0",
+    "dotenv": "^17.4.2"
   }
 }
