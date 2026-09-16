@@ -1,1 +1,9 @@
-{" name\:\Ala\,\version\:\1.0.0\,\private\:true,\scripts\:{\dev\:\node tumi-portfolio/server.js\,\build\:\echo \nothing to build\\,\start\:\node tumi-portfolio/server.js\},\engines\:{\node\:\>=18\}}
+{
+  "name": "ala-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo build complete"
+  }
+}

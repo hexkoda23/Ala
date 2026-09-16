@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaran Oluwatumininu | Content Creator & Video Editor</title>
+    <meta name="description" content="Alaran Oluwatumininu is an award-grade Content Creator & Video Editor crafting high-converting brand stories, founder docu-series, and cinematic commercial campaigns.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Canvas Dynamic Background -->
+    <canvas id="ambientCanvas"></canvas>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-tag">DIRECTOR &amp; STORYTELLER</div>
+            <div class="preloader-name">
+                <span class="preloader-char">T</span>
+                <span class="preloader-char">U</span>
+                <span class="preloader-char">M</span>
+                <span class="preloader-char">I</span>
+                <span class="preloader-char">.</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+            <div class="preloader-meta">
+                <span class="preloader-counter">0%</span>
+                <span class="preloader-status">Curating Cinema</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring">
+        <span class="cursor-badge">EXPLORE</span>
+    </div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#hero" class="logo magnetic-btn">
+            <span class="logo-text">TUMI</span>
+            <span class="logo-dot"></span>
+        </a>
+        
+        <nav class="nav-links">
+            <a href="#work" class="nav-link magnetic-btn"><span>Work</span></a>
+            <a href="#about" class="nav-link magnetic-btn"><span>About</span></a>
+            <a href="#featured" class="nav-link magnetic-btn"><span>Client Story</span></a>
+            <a href="#services" class="nav-link magnetic-btn"><span>Capabilities</span></a>
+            <a href="#contact" class="nav-link magnetic-btn"><span>Connect</span></a>
+        </nav>
+
+        <div class="nav-actions">
+            <!-- Theme Switcher -->
+            <button class="theme-toggle magnetic-btn" id="themeToggle" aria-label="Toggle Theme" title="Toggle Light / Dark theme">
+                <div class="toggle-icon-wrap">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </div>
+                <span class="theme-label">Dark</span>
+            </button>
+
+            <!-- Mobile Hamburger -->
+            <div class="hamburger magnetic-btn" id="hamburger" aria-label="Menu">
+                <div class="ham-line"></div>
+                <div class="ham-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#work" class="mobile-link"><span class="mobile-num">01</span> Work</a>
+            <a href="#about" class="mobile-link"><span class="mobile-num">02</span> About</a>
+            <a href="#featured" class="mobile-link"><span class="mobile-num">03</span> Client Story</a>
+            <a href="#services" class="mobile-link"><span class="mobile-num">04</span> Capabilities</a>
+            <a href="#contact" class="mobile-link"><span class="mobile-num">05</span> Connect</a>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg">
+                <!-- Tumi's artistic portrait with glasses -->
+                <img src="/media/WhatsApp Image 2026-09-14 at 6.27.13 PM.jpeg" alt="Alaran Oluwatumininu" class="parallax-bg">
+                <div class="hero-overlay"></div>
+                <div class="hero-gradient-orb orb-1"></div>
+                <div class="hero-gradient-orb orb-2"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <span class="badge-dot"></span>
+                    <span class="eyebrow-text">Available For Global Commissions &amp; Brand Roles</span>
+                    <span class="badge-pill">2026 Edition</span>
+                </div>
+                
+                <h1 class="hero-title" aria-label="Alaran Oluwatumininu">
+                    <div class="title-line">
+                        <span class="char-wrap">A</span><span class="char-wrap">L</span><span class="char-wrap">A</span><span class="char-wrap">R</span><span class="char-wrap">A</span><span class="char-wrap">N</span>
+                    </div>
+                    <div class="title-line title-highlight">
+                        <span class="char-wrap">O</span><span class="char-wrap">L</span><span class="char-wrap">U</span><span class="char-wrap">W</span><span class="char-wrap">A</span><span class="char-wrap">T</span><span class="char-wrap">U</span><span class="char-wrap">M</span><span class="char-wrap">I</span><span class="char-wrap">N</span><span class="char-wrap">I</span><span class="char-wrap">N</span><span class="char-wrap">U</span>
+                    </div>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Content Creator <span class="ampersand">&amp;</span> Video Editor
+                </p>
+
+                <div class="hero-subtext">
+                    Transforming raw brand moments into cinema grade stories that captivate audiences and inspire high-tier teams.
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary magnetic-btn">
+                        <span>Explore Selected Films</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="#featured" class="btn btn-glass magnetic-btn">
+                        <span>Client Docu Series</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-cta magnetic-btn">
+                <div class="scroll-text">Scroll To Discover</div>
+                <div class="scroll-line-wrap">
+                    <div class="scroll-line-inner"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Ribbon -->
+        <section class="marquee-section" aria-hidden="true">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>Brand Content Creation</span><span class="marquee-sep">✦</span>
+                    <span>Cinematic Video Editing</span><span class="marquee-sep">✦</span>
+                    <span>Visual Storytelling</span><span class="marquee-sep">✦</span>
+                    <span>Color Grading &amp; Sound Design</span><span class="marquee-sep">✦</span>
+                    <span>Creative Direction</span><span class="marquee-sep">✦</span>
+                    <span>Founder Documentaries</span><span class="marquee-sep">✦</span>
+                    <span>Viral Pacing &amp; Hooks</span><span class="marquee-sep">✦</span>
+                    <span>Brand Content Creation</span><span class="marquee-sep">✦</span>
+                    <span>Cinematic Video Editing</span><span class="marquee-sep">✦</span>
+                    <span>Visual Storytelling</span><span class="marquee-sep">✦</span>
+                    <span>Color Grading &amp; Sound Design</span><span class="marquee-sep">✦</span>
+                    <span>Creative Direction</span><span class="marquee-sep">✦</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curated Work / Video Showcase Section -->
+        <section id="work" class="work section-pad">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">
+                        <span class="label-num">01</span>
+                        <span class="label-text">Curated Portfolio</span>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h2 class="section-title split-text">
+                            Visual narratives engineered with rhythm and depth.
+                        </h2>
+                        <p class="section-desc">
+                            Hover over any piece to preview the edit in motion. Click on any video to expand into an immersive, full-fidelity cinema view.
+                        </p>
+                    </div>
+
+                    <!-- Filter / Category Tabs -->
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Works (08)</button>
+                        <button class="filter-btn" data-filter="campaign">Brand Campaigns</button>
+                        <button class="filter-btn" data-filter="narrative">Storytelling &amp; Mood</button>
+                        <button class="filter-btn" data-filter="lifestyle">Lifestyle &amp; Motion</button>
+                    </div>
+                </div>
+
+                <!-- Story-Driven Linked Work Grid -->
+                <div class="portfolio-grid">
+                    
+                    <!-- Linked Duo 01: The Visual Sequence -->
+                    <div class="portfolio-item card-wide" data-category="campaign" data-video="/media/IMG_1924.MOV" data-title="The Signature Sequence Part I" data-role="Concept, Direction &amp; Edit" data-desc="The opening segment of a high-energy brand visual. Cut with pinpoint audio-visual synchronization, dynamic transitions, and modern brand rhythm designed to stop the scroll.">
+                        <div class="card-badge">Linked Campaign &bull; Part I</div>
+                        <div class="portfolio-media">
+                            <video class="portfolio-video" muted loop playsinline preload="metadata">
+                                <source src="/media/IMG_1924.MOV" type="video/quicktime">
+                                <source src="/media/IMG_1924.MOV" type="video/mp4">
+                            </video>
+                            <div class="play-indicator">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="info-meta">
+                                <span class="proj-category">Commercial Cut</span>
+                                <span class="proj-num">01</span>
+                            </div>
+                            <h3>The Signature Sequence Part I</h3>
+                            <p class="proj-summary">Dynamic brand commercial cut with precision audio-visual transitions.</p>
+                            <div class="item-footer">
+                                <span class="view-pill">Watch Preview &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linked Duo 02: Continuation -->
+                    <div class="portfolio-item" data-category="campaign" data-video="/media/IMG_1925.MOV" data-title="The Signature Sequence Part II" data-role="Post-Production &amp; Flow" data-desc="Part two of the dual-cut brand showcase. Exploring continuous camera momentum, seamless scene linking, and editorial color consistency tailored for modern social feeds.">
+                        <div class="card-badge">Linked Campaign &bull; Part II</div>
+                        <div class="portfolio-media">
+                            <video class="portfolio-video" muted loop playsinline preload="metadata">
+                                <source src="/media/IMG_1925.MOV" type="video/quicktime">
+                                <source src="/media/IMG_1925.MOV" type="video/mp4">
+                            </video>
+                            <div class="play-indicator">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="info-meta">
+                                <span class="proj-category">Commercial Flow</span>
+                                <span class="proj-num">02</span>
+                            </div>
+                            <h3>The Signature Sequence Part II</h3>
+                            <p class="proj-summary">Direct narrative continuation emphasizing continuous momentum and brand voice.</p>
+                            <div class="item-footer">
+                                <span class="view-pill">Watch Preview &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linked Duo 03: Editorial Duology Part I -->
+                    <div class="portfolio-item" data-category="narrative" data-video="/media/IMG_8122.MOV" data-title="Kinetic Rhythm Act I" data-role="Art Direction &amp; Color" data-desc="Part of an editorial visual pair. Focuses on cinematic framing, textural lighting, and a deliberate rhythm that establishes mood and emotional resonance.">
+                        <div class="card-badge">Editorial Duology &bull; A</div>
+                        <div class="portfolio-media">
+                            <video class="portfolio-video" muted loop playsinline preload="metadata">
+                                <source src="/media/IMG_8122.MOV" type="video/quicktime">
+                                <source src="/media/IMG_8122.MOV" type="video/mp4">
+                            </video>
+                            <div class="play-indicator">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="info-meta">
+                                <span class="proj-category">Fashion &amp; Mood</span>
+                                <span class="proj-num">03</span>
+                            </div>
+                            <h3>Kinetic Rhythm Act I</h3>
+                            <p class="proj-summary">Aesthetic brand framing highlighting lighting, style, and natural cadence.</p>
+                            <div class="item-footer">
+                                <span class="view-pill">Watch Preview &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linked Duo 04: Editorial Duology Part II -->
+                    <div class="portfolio-item" data-category="narrative" data-video="/media/IMG_8123.MOV" data-title="Kinetic Rhythm Act II" data-role="Post-Production &amp; Tempo" data-desc="The follow-through piece completing the duo series. Shifts pace into energetic cuts and polished micro-edits for high brand retention and engagement.">
+                        <div class="card-badge">Editorial Duology &bull; B</div>
+                        <div class="portfolio-media">
+                            <video class="portfolio-video" muted loop playsinline preload="metadata">
+                                <source src="/media/IMG_8123.MOV" type="video/quicktime">
+                                <source src="/media/IMG_8123.MOV" type="video/mp4">
+                            </video>
+                            <div class="play-indicator">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="info-meta">
+                                <span class="proj-category">Fashion &amp; Motion</span>
+                                <span class="proj-num">04</span>
+                            </div>
+                            <h3>Kinetic Rhythm Act II</h3>
+                            <p class="proj-summary">Second movement with fast-paced cuts, sound design accents, and punchy transitions.</p>
+                            <div class="item-footer">
+                                <span class="view-pill">Watch Preview &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Project: Urban Atmosphere -->
+                    <div class="portfolio-item card-tall" data-category="lifestyle" data-video="/media/IMG_5994.MOV" data-title="Urban Atmosphere &amp; Tone" data-role="Content Creation &amp; Grading" data-desc="Atmospheric brand editorial capturing spontaneous movement, modern lifestyle aesthetics, and color grading tuned for clean, contemporary visuals.">
+                        <div class="card-badge">Lifestyle Editorial</div>
+                        <div class="portfolio-media">
+                            <video class="portfolio-video" muted loop playsinline preload="metadata">
+                                <source src="/media/IMG_5994.MOV" type="video/quicktime">
+                                <source src="/media/IMG_5994.MOV" type="video/mp4">
+                            </video>
+                            <div class="play-indicator">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="info-meta">
+                                <span class="proj-category">Lifestyle Motion</span>
+                                <span class="proj-num">05</span>
+                            </div>
+                            <h3>Urban Atmosphere &amp; Tone</h3>
+                            <p class="proj-summary">Rich ambient styling and dynamic pacing for lifestyle and apparel identity.</p>
+                            <div class="item-footer">
+                                <span class="view-pill">Watch Preview &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Project: Product & Brand Presence -->
+                    <div class="portfolio-item" data-category="campaign" data-video="/media/IMG_7235.MOV" data-title="Product Identity &amp; Presence" data-role="Brand Storytelling" data-desc="Engineered specifically to convert viewers into enthusiasts. Showcases product features, tactile elements, and confident brand positioning.">
+                        <div class="card-badge">Brand Showcase</div>
+                        <div class="portfolio-media">
+                            <video class="portfolio-video" muted loop playsinline preload="metadata">
+                                <source src="/media/IMG_7235.MOV" type="video/quicktime">
+                                <source src="/media/IMG_7235.MOV" type="video/mp4">
+                            </video>
+                            <div class="play-indicator">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="info-meta">
+                                <span class="proj-category">Commercial Showcase</span>
+                                <span class="proj-num">06</span>
+                            </div>
+                            <h3>Product Identity &amp; Presence</h3>
+                            <p class="proj-summary">Focused product spotlight highlighting craftsmanship and aesthetic detail.</p>
+                            <div class="item-footer">
+                                <span class="view-pill">Watch Preview &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Project: Brand Anthem -->
+                    <div class="portfolio-item" data-category="narrative" data-video="/media/IMG_8491.MOV" data-title="Brand Anthem &amp; Energy" data-role="Pacing, Beat-Sync &amp; Cut" data-desc="High-tempo, rhythmic edit calibrated to musical accents and visual punch. Designed for digital campaigns requiring quick viewer engagement.">
+                        <div class="card-badge">Digital Anthem</div>
+                        <div class="portfolio-media">
+                            <video class="portfolio-video" muted loop playsinline preload="metadata">
+                                <source src="/media/IMG_8491.MOV" type="video/quicktime">
+                                <source src="/media/IMG_8491.MOV" type="video/mp4">
+                            </video>
+                            <div class="play-indicator">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="info-meta">
+                                <span class="proj-category">Campaign Anthem</span>
+                                <span class="proj-num">07</span>
+                            </div>
+                            <h3>Brand Anthem &amp; Energy</h3>
+                            <p class="proj-summary">Sync-focused commercial cut with high visual energy and rhythm.</p>
+                            <div class="item-footer">
+                                <span class="view-pill">Watch Preview &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Project: Digital Story Cut -->
+                    <div class="portfolio-item" data-category="lifestyle" data-video="/media/IMG_8604.MOV" data-title="Digital Story Cut &amp; Aura" data-role="Creative Direction &amp; Post" data-desc="Polished short-form narrative tailored for digital distribution. Blends crisp editing, intentional pauses, and modern grading.">
+                        <div class="card-badge">Digital Story</div>
+                        <div class="portfolio-media">
+                            <video class="portfolio-video" muted loop playsinline preload="metadata">
+                                <source src="/media/IMG_8604.MOV" type="video/quicktime">
+                                <source src="/media/IMG_8604.MOV" type="video/mp4">
+                            </video>
+                            <div class="play-indicator">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="info-meta">
+                                <span class="proj-category">Creative Post</span>
+                                <span class="proj-num">08</span>
+                            </div>
+                            <h3>Digital Story Cut &amp; Aura</h3>
+                            <p class="proj-summary">Contemporary brand narrative piece focused on social impact and reach.</p>
+                            <div class="item-footer">
+                                <span class="view-pill">Watch Preview &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section: Client Vlog & Company Spotlight -->
+        <section id="featured" class="featured-client section-pad">
+            <div class="container">
+                <div class="client-spotlight-card">
+                    <div class="spotlight-badge">
+                        <span class="spotlight-tag">CLIENT SPOTLIGHT &bull; VLOG &amp; COMPANY DOCU-SERIES</span>
+                    </div>
+                    
+                    <div class="spotlight-grid">
+                        <!-- Video Cinema Frame -->
+                        <div class="spotlight-media-wrap">
+                            <div class="spotlight-player">
+                                <video id="clientVlogVideo" class="spotlight-video" controls playsinline preload="auto">
+                                    <source src="/media/IMG_5177.MOV" type="video/quicktime">
+                                    <source src="/media/IMG_5177.MOV" type="video/mp4">
+                                </video>
+                                <div class="spotlight-play-overlay" id="spotlightPlayBtn">
+                                    <div class="cinema-play-circle magnetic-btn">
+                                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                                            <polygon points="6,4 20,12 6,20"/>
+                                        </svg>
+                                    </div>
+                                    <div class="spotlight-play-hint">Watch Full Client Docu Story</div>
+                                </div>
+                            </div>
+                            <div class="media-accent-frame"></div>
+                        </div>
+
+                        <!-- Narrative & Details -->
+                        <div class="spotlight-info">
+                            <div class="spotlight-header">
+                                <span class="spotlight-label">Commissioned Client Production</span>
+                                <h3 class="spotlight-title">Company Spotlight &amp; Founder Vlog Series</h3>
+                            </div>
+                            
+                            <p class="spotlight-description">
+                                This featured project is an in-depth client vlog and company narrative produced and edited by Tumi. Rather than a personal reel, this production captures an authentic brand founder story, customer atmosphere, and company culture in a cinematic documentary style.
+                            </p>
+
+                            <div class="spotlight-deliverables">
+                                <div class="deliverable-item">
+                                    <span class="del-icon">✓</span>
+                                    <div>
+                                        <strong>Full Vlog Narrative Arc</strong>
+                                        <p>Comprehensive storytelling taking viewers through the client's day, vision, and enterprise operations.</p>
+                                    </div>
+                                </div>
+                                <div class="deliverable-item">
+                                    <span class="del-icon">✓</span>
+                                    <div>
+                                        <strong>Voiceover &amp; Natural Audio Mix</strong>
+                                        <p>Clean dialogue separation, ambient environmental soundscape, and musical underscore.</p>
+                                    </div>
+                                </div>
+                                <div class="deliverable-item">
+                                    <span class="del-icon">✓</span>
+                                    <div>
+                                        <strong>Company Brand Identity</strong>
+                                        <p>Carefully graded colors and subtle kinetic graphics reflecting the company's premium market standing.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spotlight-quote">
+                                <blockquote>
+                                    "Tumi transformed our day-to-day operations into an inspiring visual journey that resonated across all our customer channels."
+                                </blockquote>
+                                <cite>Client Brand Director</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section with Portrait -->
+        <section id="about" class="about section-pad">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">
+                        <span class="label-num">02</span>
+                        <span class="label-text">The Creative Vision</span>
+                    </div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-col-img">
+                        <div class="about-img-frame magnetic-btn">
+                            <div class="img-reveal-mask"></div>
+                            <!-- Second verified photo of Tumi in casual white top -->
+                            <img src="/media/WhatsApp Image 2026-09-14 at 6.27.13 PM (1).jpeg" alt="Alaran Oluwatumininu" class="about-img">
+                            <div class="about-frame-border"></div>
+                            <div class="about-floating-card">
+                                <span class="card-symbol">★</span>
+                                <div>
+                                    <div class="card-bold">Alaran Oluwatumininu</div>
+                                    <div class="card-light">Lagos &bull; Global Commissions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-col-text">
+                        <h2 class="about-heading split-text">
+                            Crafting compelling visual stories that elevate brands into iconic experiences.
+                        </h2>
+                        
+                        <div class="about-text-content">
+                            <p class="about-body reveal-up">
+                                I am Alaran Oluwatumininu, a dedicated content creator and video editor who treats every frame as an opportunity to build trust, spark desire, and communicate brand purpose.
+                            </p>
+                            <p class="about-body reveal-up">
+                                From fast-paced social commercials to long-form founder vlogs, I engineer the flow, soundscape, and color to produce work that doesn't just catch attention it commands it. Whether collaborating with modern startups, direct-to-consumer innovators, or enterprise organizations, I bring relentless attention to narrative rhythm and visual polish.
+                            </p>
+                        </div>
+
+                        <!-- Statistics Grid -->
+                        <div class="stats-row">
+                            <div class="stat reveal-up">
+                                <div class="stat-number">
+                                    <span class="counter" data-target="9">0</span><span class="stat-plus">+</span>
+                                </div>
+                                <div class="stat-label">Curated<br>Brand Works</div>
+                            </div>
+                            <div class="stat reveal-up">
+                                <div class="stat-number">
+                                    <span class="counter" data-target="100">0</span><span class="stat-plus">%</span>
+                                </div>
+                                <div class="stat-label">Client Trust<br>&amp; Retention</div>
+                            </div>
+                            <div class="stat reveal-up">
+                                <div class="stat-number">
+                                    <span class="counter" data-target="50">0</span><span class="stat-plus">+</span>
+                                </div>
+                                <div class="stat-label">Videos<br>Engineered</div>
+                            </div>
+                            <div class="stat reveal-up">
+                                <div class="stat-number">
+                                    <span class="counter" data-target="24">0</span><span class="stat-plus">h</span>
+                                </div>
+                                <div class="stat-label">Rapid Creative<br>Sprint Pacing</div>
+                            </div>
+                        </div>
+
+                        <!-- Software & Arsenal Badges -->
+                        <div class="tools-row reveal-up">
+                            <span class="tool-tag">CapCut Pro</span>
+                            <span class="tool-tag">Premiere Pro</span>
+                            <span class="tool-tag">DaVinci Resolve</span>
+                            <span class="tool-tag">Creative Direction</span>
+                            <span class="tool-tag">Viral Pacing</span>
+                            <span class="tool-tag">Color Grading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities & Services -->
+        <section id="services" class="services section-pad">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">
+                        <span class="label-num">03</span>
+                        <span class="label-text">Strategic Capabilities</span>
+                    </div>
+                    <h2 class="section-title split-text">
+                        End to end visual solutions for ambitious companies.
+                    </h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal-up" data-speed="1">
+                        <div class="service-glow"></div>
+                        <div class="service-header">
+                            <span class="service-num">01</span>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Brand Content Creation</h3>
+                        <p>Ideation, scripting, shooting, and conceptual direction tailored to your brand's unique market voice. Crafting visual hooks that capture attention within the first three seconds.</p>
+                        <div class="service-bullets">
+                            <span>Social Campaign Series</span>
+                            <span>Product Spotlights</span>
+                            <span>Interactive Video Ads</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal-up" data-speed="1.05">
+                        <div class="service-glow"></div>
+                        <div class="service-header">
+                            <span class="service-num">02</span>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                                    <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                                    <line x1="7" y1="2" x2="7" y2="22"></line>
+                                    <line x1="17" y1="2" x2="17" y2="22"></line>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <line x1="2" y1="7" x2="7" y2="7"></line>
+                                    <line x1="2" y1="17" x2="7" y2="17"></line>
+                                    <line x1="17" y1="17" x2="22" y2="17"></line>
+                                    <line x1="17" y1="7" x2="22" y2="7"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Commercial Video Editing</h3>
+                        <p>High-end post-production, multi-camera assembly, and rhythm-based pacing. Transforming raw footage into tight, fluid, cinematic stories that maintain viewer interest.</p>
+                        <div class="service-bullets">
+                            <span>Beat-Synced Cuts</span>
+                            <span>Dynamic Micro-Transitions</span>
+                            <span>Custom Sound Design</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal-up" data-speed="1.1">
+                        <div class="service-glow"></div>
+                        <div class="service-header">
+                            <span class="service-num">03</span>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Client Vlogs &amp; Docu-Series</h3>
+                        <p>Producing comprehensive brand and founder profiles. Conducting on-the-ground visual documentation of teams, company milestones, and enterprise culture.</p>
+                        <div class="service-bullets">
+                            <span>Founder Vlogs</span>
+                            <span>Behind the Scenes</span>
+                            <span>Corporate Culture Films</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal-up" data-speed="1.15">
+                        <div class="service-glow"></div>
+                        <div class="service-header">
+                            <span class="service-num">04</span>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Creative Direction &amp; Color</h3>
+                        <p>Guiding the visual identity across every channel. Moodboarding, color grading, lighting consultation, and cohesive aesthetics that position your brand ahead of competition.</p>
+                        <div class="service-bullets">
+                            <span>Aesthetic Moodboards</span>
+                            <span>Film Emulation Grading</span>
+                            <span>Cross-Platform Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-pad">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-left">
+                        <div class="section-label">
+                            <span class="label-num">04</span>
+                            <span class="label-text">Initiate A Collaboration</span>
+                        </div>
+                        <h2 class="contact-heading split-text">
+                            Let's construct something unforgettable.
+                        </h2>
+                        <p class="contact-subtext">
+                            Seeking a content creator and video editor who understands nuance, tempo, and high-standard execution? Let's discuss your next campaign or team role.
+                        </p>
+                        
+                        <div class="contact-card">
+                            <div class="contact-card-label">Direct Communication</div>
+                            <a href="mailto:tumininu@creative.com" class="contact-email-link magnetic-btn">
+                                <span>tumininu@creative.com</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                            <div class="contact-status-row">
+                                <span class="status-indicator"></span>
+                                <span>Accepting Q3 / Q4 2026 Creative Briefs &amp; Brand Contracts</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" required placeholder=" " autocomplete="off">
+                                    <label for="name">Your Name / Company</label>
+                                    <div class="input-line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required placeholder=" " autocomplete="off">
+                                    <label for="email">Work Email</label>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="role" name="role" placeholder=" " autocomplete="off">
+                                <label for="role">Project Type (Brand Campaign, Client Vlog, Full-Time Role)</label>
+                                <div class="input-line"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder=" " rows="4" autocomplete="off"></textarea>
+                                <label for="message">Project Outline or Vision</label>
+                                <div class="input-line"></div>
+                            </div>
+
+                            <button type="submit" class="cta-btn magnetic-btn">
+                                <span class="btn-text">Submit Inquiry</span>
+                                <span class="btn-arrow">&rarr;</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <div class="footer-logo">TUMI<span class="logo-dot"></span></div>
+                        <p class="footer-tagline">Alaran Oluwatumininu &bull; Visual Storytelling for World-Class Brands</p>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link magnetic-btn">Instagram</a>
+                        <a href="#" class="social-link magnetic-btn">Twitter / X</a>
+                        <a href="#" class="social-link magnetic-btn">LinkedIn</a>
+                        <a href="#" class="social-link magnetic-btn">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Alaran Oluwatumininu. All rights reserved.</p>
+                    <p class="footer-credit">Engineered with cinematic precision</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Fullscreen Video Cinema Modal -->
+    <div class="cinema-modal" id="cinemaModal" aria-hidden="true">
+        <div class="cinema-backdrop" id="modalBackdrop"></div>
+        <div class="cinema-dialog">
+            <button class="modal-close-btn magnetic-btn" id="modalCloseBtn" aria-label="Close Cinema">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-video-box">
+                <video id="modalVideo" class="modal-video" controls playsinline></video>
+            </div>
+            <div class="modal-meta-bar">
+                <div>
+                    <h4 id="modalTitle" class="modal-title">Project Title</h4>
+                    <p id="modalRole" class="modal-role">Role &amp; Details</p>
+                </div>
+                <div id="modalDesc" class="modal-desc">Description of the project.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    
+    <!-- Application Script -->
+    <script src="script.js"></script>
+</body>
+</html>
